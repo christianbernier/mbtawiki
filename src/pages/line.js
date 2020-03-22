@@ -10,12 +10,14 @@ import Fares from "../../fares.json";
 export default () => {
   function getUrlVars() {
     let vars = {};
-    let parts = window.location.href.replace(
-      /[?&]+([^=&]+)=([^&]*)/gi,
-      function(m, key, value) {
-        vars[key] = value;
-      }
-    );
+    if(typeof window !== "undefined"){
+      let parts = window.location.href.replace(
+        /[?&]+([^=&]+)=([^&]*)/gi,
+        function(m, key, value) {
+          vars[key] = value;
+        }
+      );
+    }
     return vars;
   }
   const line = getUrlVars().l;
