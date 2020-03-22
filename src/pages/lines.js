@@ -16,7 +16,7 @@ export default () => {
       );
     } else{
       return {
-        l: "Red"
+        l: "Green"
       }
     }
     return vars;
