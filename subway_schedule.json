@@ -1,0 +1,42 @@
+[
+  {
+    "route": "Red",
+    "peak": "Trains arrive every 9 minutes",
+    "off_peak": "Trains arrive every 12-16 minutes"
+  },
+  {
+    "route": "Orange",
+    "peak": "Trains arrive every 6 minutes",
+    "off_peak": "Trains arrive every 9-11 minutes"
+  },
+  {
+    "route": "Blue",
+    "peak": "Trains arrive every 5 minutes",
+    "off_peak": "Trains arrive every 9-13 minutes"
+  },
+  {
+    "route": "Mattapan",
+    "peak": "Trains arrive every 5 minutes",
+    "off_peak": "Trains arrive every 8-12 minutes except on weekend mornings and late nights, where trains arrive every 26 minutes"
+  },
+  {
+    "route": "Green-B",
+    "peak": "Trains arrive every 6 minutes",
+    "off_peak": "Trains arrive every 7-12 minutes"
+  },
+  {
+    "route": "Green-C",
+    "peak": "Trains arrive every 6-7 minutes",
+    "off_peak": "Trains arrive every 7-12 minutes"
+  },
+  {
+    "route": "Green-D",
+    "peak": "Trains arrive every 6 minutes",
+    "off_peak": "Trains arrive every 8-13 minutes"
+  },
+  {
+    "route": "Green-E",
+    "peak": "Trains arrive every 6 minutes",
+    "off_peak": "Trains arrive every 8-12 minutes"
+  }
+]

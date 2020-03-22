@@ -1,0 +1,117 @@
+[
+  {
+    "version": "1.6.0",
+    "date": "March 22nd, 2020",
+    "description": "A complete redesign of the site to match the new MBTA Wiki mobile app on the Apple App Store. Changes include better graphics, colors, fonts, more line information, more station information, parking into and graph, and more! This is the biggest update to MBTA Wiki since the initial release."
+  },
+  {
+    "version": "1.5.0",
+    "date": "November 10th, 2019",
+    "description": "Redesigned line pages, updated menus for site navigation, new interface for lines with multiple routes, updated Commuter Rail line titles, added bus stop pages, updated ferry routes, updated maps, removed unused file, added custom icons."
+  },
+  {
+    "version": "1.4.0",
+    "date": "July 23rd, 2019",
+    "description": "Updated station pages, bus route pages, contact form. Fixed typos."
+  },
+  {
+    "version": "1.3.1",
+    "date": "April 27th, 2019",
+    "description": "Made Silver Line bus routes act the same as other routes, fixed 404 pages, redesigned sources page, removed some unused files."
+  },
+  {
+    "version": "1.3.0",
+    "date": "April 26th, 2019",
+    "description": "Updated bus route pages, bus menu. Added bus alerts, bus route fare prices, and updated bus routes using the API."
+  },
+  {
+    "version": "1.2.1",
+    "date": "April 24th, 2019",
+    "description": "Updated GLX Menu page, creating a divided menu and branch labels"
+  },
+  {
+    "version": "1.2.0",
+    "date": "April 23rd, 2019",
+    "description": "Updated former and planned station pages and added South Coast Rail information in Planned Stations."
+  },
+  {
+    "version": "1.1.0",
+    "date": "April 16th, 2019",
+    "description": "Rewritten station.js to be more efficient and take advantage of ES8 capabilities, added line alerts on line pages for subway, Silver Line, and Commuter Rail."
+  },
+  {
+    "version": "1.0.1",
+    "date": "April 8th, 2019",
+    "description": "Changed Yawkey Station to Lansdowne Station."
+  },
+  {
+    "version": "1.0.0",
+    "date": "March 31st, 2019",
+    "description": "Styles changed to lighter theme, station information loaded from CSV file and new API, button click-able area fixed, station predictions, station page aesthetic changes, more accurate line colors, more facilities information, Commuter Rail and Ferry Updated Station Pages, new Commuter Rail Timetables, with interactive options, removal of unused files."
+  },
+  {
+    "version": "0.7.0",
+    "date": "July 31st, 2018",
+    "description": "Added bus route pages"
+  },
+  {
+    "version": "0.6.2",
+    "date": "July 29th, 2018",
+    "description": "Added information for the Foxboro Line on the Commuter Rail and added Blue Hill Ave station to the planned stations"
+  },
+  {
+    "version": "0.6.1",
+    "date": "June 26th, 2018",
+    "description": "Fixed problems with JFK/UMass and Shawmut stations on the Red Line"
+  },
+  {
+    "version": "0.6.0",
+    "date": "June 26th, 2018",
+    "description": "Added images for every subway station"
+  },
+  {
+    "version": "0.5.0",
+    "date": "June 23rd, 2018",
+    "description": "Added former and planned stations"
+  },
+  {
+    "version": "0.4.2",
+    "date": "June 12th, 2018",
+    "description": "Added maps page (under More)"
+  },
+  {
+    "version": "0.4.1",
+    "date": "June 12th, 2018",
+    "description": "Added George's Island stop to the Hingham/Hull Ferry"
+  },
+  {
+    "version": "0.4.0",
+    "date": "May 29th, 2018",
+    "description": "Added timetables for Commuter Rail lines."
+  },
+  {
+    "version": "0.3.1",
+    "date": "April 15th, 2018",
+    "description": "Updated information about SL3 on the South Station page."
+  },
+  {
+    "version": "0.3.0",
+    "date": "April 14th, 2018",
+    "description": "Fixed typos, added SL3, added news"
+  },
+  {
+    "version": "0.2.0",
+    "date": "March 16th, 2018",
+    "description": "Added information and contact form"
+  },
+  {
+    "version": "0.1.0",
+    "date": "March 8th, 2018",
+    "description": "Added HTTPS for more secure browsing"
+  },
+  {
+    "version": "Alpha",
+    "date": "2017",
+    "description": "Created MBTA Wiki with station information about all subway stations."
+  }
+]

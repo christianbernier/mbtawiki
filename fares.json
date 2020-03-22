@@ -1,0 +1,33 @@
+{
+  "subway": {
+    "charlie_card": "$2.40",
+    "cash": "$2.90",
+    "_1_day_pass": "$12.75",
+    "_7_day_pass": "$22.50",
+    "monthly_link": "$90.00"
+  },
+  "local_bus": {
+    "charlie_card": "$1.70",
+    "cash": "$2.00",
+    "_1_day_pass": "$12.75",
+    "_7_day_pass": "$22.50",
+    "local_bus_pass": "$55.00",
+    "monthly_link": "$90.00"
+  },
+  "inner_express_bus": {
+    "charlie_card": "$4.25",
+    "cash": "$5.25",
+    "inner_express_bus_pass": "$136.00"
+  },
+  "outer_express_bus": {
+    "charlie_card": "$5.25",
+    "cash": "$7.00",
+    "outer_express_bus_pass": "$168.00"
+  },
+  "commuter_rail": {
+    "one_way": "$2.40-$13.25",
+    "weekend_pass": "$10.00",
+    "monthly_cr_pass_charlie_ticket": "$90.00-$426.00",
+    "monthly_cr_pass_mTicket": "$80.00-$416.00"
+  }
+}
