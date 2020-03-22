@@ -14,6 +14,13 @@ export default () => {
           vars[key] = value;
         }
       );
+    } else{
+      return {
+        id: "place-north",
+        stationName: "North Station",
+        lineMutedColor: "#000000",
+        lineHighlightedMutedColor: "#000000"
+      }
     }
     return vars;
   }

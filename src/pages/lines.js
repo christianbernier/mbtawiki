@@ -14,6 +14,10 @@ export default () => {
           vars[key] = value;
         }
       );
+    } else{
+      return {
+        l: "Red"
+      }
     }
     return vars;
   }
