@@ -15,6 +15,7 @@ export default () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="og:image" content="https://cdn.glitch.com/d0248aaf-2315-4c71-a38d-f7d60856f1f7%2FShare%20Image.png?v=1584911180910"/>
         <meta property="description" content="MBTA Wiki provides information for every subway station, bus stop, and commuter rail stop including predictions, accessibility, and parking information!"/>
+        <meta name="apple-itunes-app" content="app-id=1502936936"/>
       </Helmet>
       <Global
         styles={css`
