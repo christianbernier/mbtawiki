@@ -1,5 +1,10 @@
 [
   {
+    "version": "1.6.1",
+    "date": "March 23rd, 2020",
+    "description": "Fixed a small issue with displaying station addresses"
+  },
+  {
     "version": "1.6.0",
     "date": "March 22nd, 2020",
     "description": "A complete redesign of the site to match the new MBTA Wiki mobile app on the Apple App Store. Changes include better graphics, colors, fonts, more line information, more station information, parking into and graph, and more! This is the biggest update to MBTA Wiki since the initial release."

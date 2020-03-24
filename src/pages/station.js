@@ -284,7 +284,7 @@ export default () => {
                 padding: 10px 20px;
                 margin-left: 15%;
                 margin-bottom: 20px;
-                display: ${address.length > 0 ? "" : "none"};
+                display: ${address ? "" : "none"};
                 @media only screen and (max-width: 1310px) {
                   margin-left: 0;
                   width: auto;
