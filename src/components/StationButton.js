@@ -5,7 +5,7 @@ import { css } from "@emotion/core";
 export default ({ color, text, link }) => {
   return (
     <Link
-      to={link}
+      to={"/" + link}
       css={css`
         text-decoration: none;
       `}

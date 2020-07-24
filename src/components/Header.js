@@ -59,7 +59,8 @@ export default () => {
         {["Subway", "Commuter Rail", "Bus"].map(e => {
           return (
             <Link
-              to={e.replace(" ", "-").toLowerCase()}
+              to={"/" + e.replace(" ", "-").toLowerCase()}
+              key={e}
               css={css`
                 text-decoration: none;
               `}

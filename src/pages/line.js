@@ -317,65 +317,65 @@ export default () => {
                 Fares
               </p>
               {fares.charlieCard ? (
-                <p class="fare">CharlieCard ({fares.charlieCard})</p>
+                <p className="fare">CharlieCard ({fares.charlieCard})</p>
               ) : (
                 ""
               )}
               {fares.cash ? (
-                <p class="fare">CharlieTicket or Cash ({fares.cash})</p>
+                <p className="fare">CharlieTicket or Cash ({fares.cash})</p>
               ) : (
                 ""
               )}
               {fares._1DayPass ? (
-                <p class="fare">1-Day Pass ({fares._1DayPass})</p>
+                <p className="fare">1-Day Pass ({fares._1DayPass})</p>
               ) : (
                 ""
               )}
               {fares._7DayPass ? (
-                <p class="fare">7-Day Pass ({fares._7DayPass})</p>
+                <p className="fare">7-Day Pass ({fares._7DayPass})</p>
               ) : (
                 ""
               )}
               {fares.monthlyLink ? (
-                <p class="fare">Monthly LinkPass ({fares.monthlyLink})</p>
+                <p className="fare">Monthly LinkPass ({fares.monthlyLink})</p>
               ) : (
                 ""
               )}
               {fares.localBusPass ? (
-                <p class="fare">
+                <p className="fare">
                   Monthly Local Bus Pass ({fares.localBusPass})
                 </p>
               ) : (
                 ""
               )}
               {fares.innerExpressBusPass ? (
-                <p class="fare">
+                <p className="fare">
                   Monthly Inner Express Bus Pass ({fares.innerExpressBusPass})
                 </p>
               ) : (
                 ""
               )}
               {fares.outerExpressBusPass ? (
-                <p class="fare">
+                <p className="fare">
                   Monthly Outer Express Bus Pass ({fares.outerExpressBusPass})
                 </p>
               ) : (
                 ""
               )}
               {fares.crOneWay ? (
-                <p class="fare">Commuter Rail One-Way ({fares.crOneWay})</p>
+                <p className="fare">Commuter Rail One-Way ({fares.crOneWay})</p>
               ) : (
                 ""
               )}
               {fares.crWeekendPass ? (
-                <p class="fare">
+                <p className="fare">
                   Commuter Rail Weekend Pass ({fares.crWeekendPass})
                 </p>
               ) : (
                 ""
               )}
               {fares.crMonthlyCharlieTicket ? (
-                <p class="fare">
+                <p className="fare">
                   Monthly Commuter Rail Pass CharlieTicket (
                   {fares.crMonthlyCharlieTicket})
                 </p>
@@ -383,7 +383,7 @@ export default () => {
                 ""
               )}
               {fares.crMonthlymTicket ? (
-                <p class="fare">
+                <p className="fare">
                   Monthly Commuter Rail Pass mTicket ({fares.crMonthlymTicket})
                 </p>
               ) : (

@@ -77,6 +77,7 @@ export default () => {
         {crLines.map((line, index) => {
           return (
             <LineButton
+              key={line}
               color="#F5B6FF"
               text={line}
               image={null}

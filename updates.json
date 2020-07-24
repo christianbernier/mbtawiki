@@ -1,5 +1,10 @@
 [
   {
+    "version": "1.6.3",
+    "date": "July 24th, 2020",
+    "description": "Fixed the bug with displaying stations for routes, and made the method for fetching routes of a branch more efficient. Also, fixed many long-time bugs regarding links and updated 404 page."
+  },
+  {
     "version": "1.6.2",
     "date": "June 15th, 2020",
     "description": "Fixed a bug where stations were not displayed on each line page due to an API change. As a result, displaying stations on the route is slightly slower. Additionally, some routes and lines are not able to retrieve their stations due to a broken representative trip from the MBTA's API. We are currently working with the MBTA to resolve this issue as quickly as possible."

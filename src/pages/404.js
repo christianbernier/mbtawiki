@@ -30,6 +30,17 @@ export default () => {
         >
           Page not found!
         </p>
+        <p
+          css={css`
+            font-size: 21px;
+            font-weight: 450;
+            margin-bottom: 0;
+            margin-top: 15px;
+          `}
+        >
+          I'm sorry—we couldn't find the page you were looking for. Please check the URL or return to the homepage.
+          <br/><br/>If this was a problem with a built-in link, please report the bug by emailing bug@cbernier.com. Thank you.
+        </p>
       </div>
     </>
   );

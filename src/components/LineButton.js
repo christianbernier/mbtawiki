@@ -13,7 +13,7 @@ export default ({ color, text, image, whenPressed, textColor, centerText, mode }
 
   return (
     <Link
-      to={whenPressed}
+      to={"/" + whenPressed}
       css={css`
         text-decoration: none;
         margin: 10px;

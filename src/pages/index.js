@@ -134,7 +134,7 @@ export default () => {
             padding: 20px;
           `}
         >
-          Download the new MBTA Wiki mobile app on the Apple App Store!
+          Download the MBTA Wiki mobile app on the Apple App Store!
         </p>
       </div>
       <div
@@ -158,7 +158,7 @@ export default () => {
           `}
         >
           <Link
-            to="subway"
+            to="/subway"
             css={css`
               text-decoration: none;
             `}
@@ -190,6 +190,7 @@ export default () => {
             {subwayLines.map((line, index) => {
               return (
                 <LineButton
+                  key={line}
                   color={subwayColors[index]}
                   text={line}
                   image={subwayImages[index]}
@@ -207,7 +208,7 @@ export default () => {
           `}
         >
           <Link
-            to="commuter-rail"
+            to="/commuter-rail"
             css={css`
               text-decoration: none;
             `}
@@ -292,7 +293,7 @@ export default () => {
               alt={"Bus Glyph"}
             />
             <Link
-              to="bus"
+              to="/bus"
               css={css`
                 text-decoration: none;
                 display: flex;
@@ -370,13 +371,13 @@ export default () => {
         >
           MBTA Wiki
           <Link
-            to="update-log"
+            to="/update-log"
             css={css`
               color: var(--dark-background);
               margin: 0 4px;
             `}
           >
-            v1.6.2
+            v1.6.3
           </Link>
           ©2017-2020 to Christian Bernier.
         </p>
