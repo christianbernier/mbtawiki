@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { css } from "@emotion/core";
 
-export default ({ color, text, image, whenPressed, textColor, centerText, mode }) => {
+export default ({ color, hoverColor, text, image, whenPressed, textColor, centerText, mode }) => {
   let width;
 
   switch(mode){
@@ -29,6 +29,10 @@ export default ({ color, text, image, whenPressed, textColor, centerText, mode }
           grid-template-areas: ${image ? "img text" : "text"};
           grid-template-rows: auto;
           grid-template-columns: ${image ? "90px auto" : "auto"};
+
+          :hover{
+            background-color:${hoverColor}
+          }
 
           @media only screen and (max-width: 1300px){
             width: 350px;

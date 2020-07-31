@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { css } from "@emotion/core";
 
-export default ({ color, text, link }) => {
+export default ({ color, hoverColor, text, link }) => {
   return (
     <Link
       to={"/" + link}
@@ -23,6 +23,10 @@ export default ({ color, text, link }) => {
           display: flex;
           justify-content: center;
           align-items: center;
+
+          :hover{
+            background-color: ${hoverColor}
+          }
         `}
       >
         <div

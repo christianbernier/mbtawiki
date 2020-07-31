@@ -35,6 +35,14 @@ export default () => {
     "#D4D7DA",
     "#FFC7C7"
   ];
+  const subwayHoverColors = [
+    "#FF9D9D",
+    "#4FD785",
+    "#FEC36A",
+    "#57AEFF",
+    "#BCBEC0",
+    "#FF9D9D"
+  ];
   const subwayImages = [
     RedLineTrainGlyph,
     GreenLineTrainGlyph,
@@ -75,6 +83,7 @@ export default () => {
           return (
             <LineButton
               color={subwayColors[index]}
+              hoverColor={subwayHoverColors[index]}
               text={line}
               image={subwayImages[index]}
               textColor="var(--dark-background)"

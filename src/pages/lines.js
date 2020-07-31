@@ -24,6 +24,7 @@ export default () => {
   const line = getUrlVars().l;
   let lineFullName,
     lineMutedColor,
+    lineHoverColor,
     subLines,
     subLineTitles;
 
@@ -31,17 +32,20 @@ export default () => {
     case "Green":
       lineFullName = "Green Line";
       lineMutedColor = "#AFEAC7";
+      lineHoverColor = "#4FD785";
       subLines = ["Green-B", "Green-C", "Green-D", "Green-E"];
       subLineTitles = ["B Branch", "C Branch", "D Branch", "E Branch"];
       break;
     case "Silver":
       lineFullName = "Silver Line";
       lineMutedColor = "#D4D7DA";
+      lineHoverColor = "#BCBEC0";
       subLines = ["741", "742", "743", "751", "749"];
       subLineTitles = ["SL1", "SL2", "SL3", "SL4", "SL5"];
       break;
     default:
       lineFullName = "Invalid lines code.";
+      subLines = [];
   }
 
   return (
@@ -74,6 +78,7 @@ export default () => {
           return (
             <LineButton
               color={lineMutedColor}
+              hoverColor={lineHoverColor}
               text={subLineTitles[i]}
               textColor="var(--dark-background)"
               whenPressed={"line?l=" + l}

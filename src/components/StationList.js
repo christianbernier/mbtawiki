@@ -276,6 +276,7 @@ export default ({ line, lineMutedColor, lineHighlightedMutedColor }) => {
           <StationButton
             key={s}
             color={lineMutedColor}
+            hoverColor={lineHighlightedMutedColor}
             text={getStaNameFromId(s)}
             link={`station?id=${s}&name=${getStaNameFromId(
               s

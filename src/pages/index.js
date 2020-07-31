@@ -37,6 +37,14 @@ export default () => {
     "#D4D7DA",
     "#FFC7C7"
   ];
+  const subwayHoverColors = [
+    "#FF9D9D",
+    "#4FD785",
+    "#FEC36A",
+    "#57AEFF",
+    "#BCBEC0",
+    "#FF9D9D"
+  ];
   const subwayImages = [
     RedLineTrainGlyph,
     GreenLineTrainGlyph,
@@ -192,6 +200,7 @@ export default () => {
                 <LineButton
                   key={line}
                   color={subwayColors[index]}
+                  hoverColor={subwayHoverColors[index]}
                   text={line}
                   image={subwayImages[index]}
                   textColor="var(--dark-background)"
@@ -252,6 +261,7 @@ export default () => {
               return (
                 <LineButton
                   color="#F5B6FF"
+                  hoverColor="#E55FFB"
                   text={line}
                   image={null}
                   textColor="var(--dark-background)"
@@ -336,6 +346,7 @@ export default () => {
               return (
                 <LineButton
                   color="#FFEAB6"
+                  hoverColor="#F9CA51"
                   text={line}
                   image={null}
                   centerText={true}
@@ -377,7 +388,7 @@ export default () => {
               margin: 0 4px;
             `}
           >
-            v1.6.3
+            v1.6.4
           </Link>
           ©2017-2020 to Christian Bernier.
         </p>

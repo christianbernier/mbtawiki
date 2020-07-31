@@ -173,6 +173,7 @@ export default () => {
               return (
                 <LineButton
                   color="#FFEAB6"
+                  hoverColor="#F9CA51"
                   text={betterName(line)}
                   image={null}
                   centerText={true}

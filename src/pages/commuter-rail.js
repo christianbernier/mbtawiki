@@ -79,6 +79,7 @@ export default () => {
             <LineButton
               key={line}
               color="#F5B6FF"
+              hoverColor="#E55FFB"
               text={line}
               image={null}
               textColor="var(--dark-background)"

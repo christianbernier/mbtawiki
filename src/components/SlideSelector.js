@@ -14,6 +14,7 @@ export default ({ bgColor, hlColor, values, selectedValue, changeSelectedValue }
         justify-content: space-around;
         align-items: center;
         margin-bottom: 15px;
+        cursor: pointer;
       `}
     >
       {values.map(v => {
@@ -28,6 +29,10 @@ export default ({ bgColor, hlColor, values, selectedValue, changeSelectedValue }
               justify-content: center;
               border-radius: 10px;
               align-items: center;
+
+              :hover{
+                background-color: ${hlColor}
+              }
             `}
             onClick={() => changeSelectedValue(v)}
           >

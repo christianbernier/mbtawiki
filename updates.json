@@ -1,5 +1,10 @@
 [
   {
+    "version": "1.6.4",
+    "date": "July 30th, 2020",
+    "description": "Added hover colors for line and station buttons."
+  },
+  {
     "version": "1.6.3",
     "date": "July 24th, 2020",
     "description": "Fixed the bug with displaying stations for routes, and made the method for fetching routes of a branch more efficient. Also, fixed many long-time bugs regarding links and updated 404 page."
