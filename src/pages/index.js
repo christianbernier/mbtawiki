@@ -388,7 +388,7 @@ export default () => {
               margin: 0 4px;
             `}
           >
-            v1.6.4
+            v1.6.5
           </Link>
           ©2017-2020 to Christian Bernier.
         </p>

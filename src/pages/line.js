@@ -24,6 +24,9 @@ export default () => {
     }
     return vars;
   }
+
+  
+
   const line = getUrlVars().l;
   let fullLine, lineMutedColor, lineHighlightedMutedColor, lineLinkColor;
 

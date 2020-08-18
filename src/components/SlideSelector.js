@@ -42,7 +42,7 @@ export default ({ bgColor, hlColor, values, selectedValue, changeSelectedValue }
                 font-weight: 800;
               `}
             >
-              {(v === "Wickford Junction") ? "Providence" : v}
+              {v}
             </p>
           </div>
         )

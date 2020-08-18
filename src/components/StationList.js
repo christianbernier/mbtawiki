@@ -4,16 +4,17 @@ import SlideSelector from "../components/SlideSelector";
 import StationButton from "../components/StationButton";
 
 export default ({ line, lineMutedColor, lineHighlightedMutedColor }) => {
-  const [directions, setDirections] = useState(["a", "b"]);
+  const [directions, setDirections] = useState([]);
   const [selectedDirection, setSelectedDirection] = useState("");
-  const [branches, setBranches] = useState(["a", "b"]);
-  const [destinations, setDestinations] = useState(["a", "b"]);
+  const [branches, setBranches] = useState([]);
+  const [destinations, setDestinations] = useState([]);
   const [selectedBranch, setSelectedBranch] = useState("");
   const [termini, setTermini] = useState([]);
   const [routePatternId, setRoutePatternId] = useState("");
   const [subStations, setSubStations] = useState([]);
   const [stations, setStations] = useState([]);
   const [stationInfo, setStationInfo] = useState([]);
+  const [stationsLoaded, setStationsLoaded] = useState(false);
 
   useEffect(() => {
     fetch(
@@ -206,6 +207,7 @@ export default ({ line, lineMutedColor, lineHighlightedMutedColor }) => {
           })
         }
         setStations(newStations);
+        setStationsLoaded(newStations.length !== 0);
       }
     }
 
@@ -284,6 +286,27 @@ export default ({ line, lineMutedColor, lineHighlightedMutedColor }) => {
           />
         );
       })}
+      {stationsLoaded && stations.length === 0 ? 
+      <p
+        css={css`
+          font-size: 22px;
+          font-weight: 500;
+          margin-top: 0;
+        `}
+      >
+        No stations.
+      </p> : <></>}
+
+      {!stationsLoaded ? 
+      <p
+        css={css`
+          font-size: 22px;
+          font-weight: 500;
+          margin-top: 0;
+        `}
+      >
+        Loading stations...
+      </p> : <></>}
     </>
   );
 };

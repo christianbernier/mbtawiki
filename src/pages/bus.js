@@ -8,6 +8,7 @@ import BusGlyph from "../../images/BusGlyph.png";
 export default () => {
   const [busRoutes, setBusRoutes] = useState([]);
   const [query, setQuery] = useState("");
+  const [routesLoaded, setRoutesLoaded] = useState(false);
 
   const handleInputChange = () => {
     const value = document.getElementById("textInput").value;
@@ -18,9 +19,9 @@ export default () => {
     fetch(
       `https://api-v3.mbta.com/routes?api_key=e9cca8f8775749b9b79e4bed57f6216c`
     )
-      .then(data => data.json())
-      .then(data => data?.data)
-      .then(data => {
+      .then((data) => data.json())
+      .then((data) => data?.data)
+      .then((data) => {
         let routesFromAPI = [];
         for (const route of data) {
           if (
@@ -33,7 +34,7 @@ export default () => {
               "742",
               "743",
               "751",
-              "749"
+              "749",
             ].indexOf(route.id) !== -1
           ) {
             continue;
@@ -47,6 +48,7 @@ export default () => {
           routesFromAPI.push(route.id);
         }
         setBusRoutes(routesFromAPI);
+        setRoutesLoaded(true);
       });
   }, []);
 
@@ -99,7 +101,7 @@ export default () => {
               margin-bottom: 0;
               margin-left: 20px;
               margin-top: 0;
-              
+
               @media only screen and (max-width: 1310px) {
                 margin-left: 0;
               }
@@ -164,11 +166,36 @@ export default () => {
             justify-content: space-around;
           `}
         >
+          {routesLoaded && busRoutes.length === 0 ? (
+            <p
+              css={css`
+                font-size: 22px;
+                font-weight: 500;
+                margin-top: 0;
+              `}
+            >
+              No routes.
+            </p>
+          ) : (
+            <></>
+          )}
+
+          {!routesLoaded ? (
+            <p
+              css={css`
+                font-size: 22px;
+                font-weight: 500;
+                margin-top: 0;
+              `}
+            >
+              Loading routes...
+            </p>
+          ) : (
+            <></>
+          )}
           {busRoutes.map((line, index) => {
             if (
-              betterName(line)
-                .toLowerCase()
-                .indexOf(query.toLowerCase()) !== -1
+              betterName(line).toLowerCase().indexOf(query.toLowerCase()) !== -1
             ) {
               return (
                 <LineButton

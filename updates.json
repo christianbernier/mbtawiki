@@ -1,5 +1,10 @@
 [
   {
+    "version": "1.6.5",
+    "date": "August 18th, 2020",
+    "description": "Added capacity icons for select bus routes."
+  },
+  {
     "version": "1.6.4",
     "date": "July 30th, 2020",
     "description": "Added hover colors for line and station buttons."
